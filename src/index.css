@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 2rem;
+  text-decoration: underline;
+  font-size: 50px;
+}
+
+.board {
+  border: 1rem solid LightGray;
+  background: LightGray;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+  border: 4px solid yellowgreen;
+}
+
+.squares {
+  background: rgb(167, 160, 216);
+  border: 3px solid black;
+  font-size: 5rem;
+  /* font-weight: 800; */
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+}
+
+.squares:hover {
+  background-color: white;
+  color: rgb(85, 4, 4);
+  border: 2px solid #4caf50;
+}
+
+.X {
+  color: red;
+}
+
+.X:active {
+  font-size: 150%;
+}
+.O {
+  color: green;
+}
+
+.O:active {
+  font-size: 150%;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  color: green;
+  padding: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+.button {
+  background: rgb(36, 27, 27);
+  width: 67.5ch;
+  height: 50px;
+  color: white;
+  border: 3px solid yellowgreen;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: yellowgreen;
+}
